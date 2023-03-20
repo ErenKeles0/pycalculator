@@ -105,6 +105,11 @@ def basildinokta():
     global sonuc
     x=x+"."
     sonuc["text"]=x
+def sil():
+    global x
+    global sonuc
+    x=x[0:-1]
+    sonuc["text"]=x
 
 
 global sonuc
@@ -130,6 +135,7 @@ buton14=tk.Button(text="=",command=esittir,fg="white",bg="black",font="Verdana 2
 buton15=tk.Button(text="C",command=C,fg="white",bg="black",font="Verdana 28")
 buton16=tk.Button(text="0",command=basildi0,fg="white",bg="black",font="Verdana 28")
 buton17=tk.Button(text=".",command=basildinokta,fg="white",bg="black",font="Verdana 28")
+buton18=tk.Button(text="⌫",command=sil,fg="white",bg="black",font="Verdana 28")
 
 buton1.place(x=0,y=100,width=100,height=100)
 buton2.place(x=100,y=100,width=100,height=100)
@@ -147,8 +153,8 @@ buton13.place(x=300,y=300,width=100,height=100)
 buton17.place(x=200,y=400,width=100,height=100)
 buton15.place(x=0,y=400,width=100,height=100)
 buton16.place(x=100,y=400,width=100,height=100)
-buton14.place(x=400,y=100,width=100,height=400)
-
+buton14.place(x=400,y=300,width=100,height=200)
+buton18.place(x=400,y=100,width=100,height=200)
 
 
 
